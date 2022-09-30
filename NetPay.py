@@ -18,7 +18,7 @@ def Main():
 
     
     for ded in deductions:
-        if pc.PayrollDeduction.getEmployeeID(ded) == emp.getID():
+        if pc.PayrollDeduction.getEmployeeID(ded) == ec.Employee.getID(emp):
             net_pay -= pc.PayrollDeduction.getCharge(ded)
         
 
